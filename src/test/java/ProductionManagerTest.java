@@ -6,7 +6,7 @@ public class ProductionManagerTest {
     public void itShouldHaveANameAndId() {
         String name = "LIm";
         int id = 12345612;
-        ProductionManager productionManager = new ProductionManager(name,id);
+        ProductionManager productionManager = ProductionManager.getProductionManager(name,id);
         Assert.assertEquals(productionManager.getName(),name);
         Assert.assertEquals(productionManager.getId(),id);
     }

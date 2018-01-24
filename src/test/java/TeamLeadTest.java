@@ -6,7 +6,7 @@ public class TeamLeadTest {
     public void itShouldHaveANameAndId() {
         String name = "Bob";
         int id = 12345678;
-        TeamLead teamlead = new TeamLead(name,id);
+        TeamLead teamlead = TeamLead.getTeamLead(name,id);
         Assert.assertEquals(teamlead.getName(),name);
         Assert.assertEquals(teamlead.getId(),id);
     }
